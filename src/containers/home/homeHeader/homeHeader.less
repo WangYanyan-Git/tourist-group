@@ -1,0 +1,63 @@
+.header-tabs{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  height:56px;
+  background: #000;
+  .header-bar{
+      overflow: hidden;
+      padding: 5px 5px  0 5px;
+      .logo{
+          display: block;
+          float: left;
+          width: 35px;
+          height: 35px;
+          background:url("../../../common/img/zf_course1.png");
+          background-size: cover;
+      }
+      .header-icon{
+          float:right;
+          width: 30px;
+          height: 30px;
+          background: green;
+      }
+  }
+  .headlist{
+      background: #000;
+      text-align: center;
+      border-top: 1px solid green;
+      color: #fff;
+        li{
+            border-bottom: 1px solid green;
+          
+            font-size: 15px;
+            height: 30px;
+            line-height: 30px;
+            &.active{
+                color:green;
+        }
+      
+        
+      }
+
+  }
+
+
+}
+.fade-enter{
+    height: auto;
+    transition: height 150 ease-in;
+}
+.fade-enter-active{
+    height: 0;
+    transition: height 150 ease-in;
+}
+.fade-exit{
+    height: 0;
+    transition: height 150 ease-in;
+}
+.fade-exit-active{
+    height: auto;
+    transition: height 150 ease-in;
+}
